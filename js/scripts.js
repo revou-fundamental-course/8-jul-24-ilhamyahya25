@@ -1,35 +1,25 @@
-/* ini javascripts */
+function calculateSum() {
+    const inputberatbadan = parseFloat(document.getElementById('inputberatbadan').value);
+    const inputtinggibadan = parseFloat(document.getElementById('inputtinggibadan').value);
 
-function calculateBMI() {
-    const weight = parseFloat(document.getElementById('weight').value);
-    const height = parseFloat(document.getElementById('height').value) / 100;
+    if (!isNaN(inputberatbadan) && !isNaN(inputtinggibadan)) {
+        const sum = (inputberatbadan / (inputtinggibadan*inputtinggibadan));
 
-    if (isNaN(weight) || isNaN(height)) {
-        document.getElementById('result').innerText = 'Harap masukkan nilai yang valid.';
-        return;
-    }
+    document.getElementById('Result').textContent = '${sum}';
 
-    const bmi = (weight / (height * height)).toFixed(1);
-    let category = '';
+        let Message; 
+        if ( onclick button == bmi < 18.5) {
+            bmi = "Anda Memiliki Berat Badan Kurang";
+        } else if (bmiValue >= 18.5 && bmi <= 24.9) {
+            bmi = "Anda Memiliki Berat Badan Normal";
+        } else if (bmiValue >= 25 && bmi <= 29.9) {
+            bmi = "Anda Memiliki Berat Badan Berlebih";
+        } else {
+            bmi = "Anda Memiliki Berat Badan Obesitas";
+        }
 
-    if (bmi < 18.5) {
-        category = 'Kurus';
-    } else if (bmi >= 18.5 && bmi <= 24.9) {
-        category = 'Ideal';
+        document.getElementById('bmiValue').textContent = bmi;
     } else {
-        category = 'Gemuk';
+        alert("Masukkan nilai yang valid untuk berat badan dan tinggi badan.");
     }
-
-    document.getElementById('result').innerHTML = `
-        <p>Berat Badan: ${bmi}</p>
-        <p>Anda memiliki tubuh ${category}</p>
-    `;
-}
-
-function resetForm() {
-    document.getElementById('gender').value = 'male';
-    document.getElementById('input-berat-badan').value = '';
-    document.getElementById('input-usia').value = '';
-    document.getElementById('input-tinggi-badan').value = '';
-    document.getElementById('result').innerText = '';
 }

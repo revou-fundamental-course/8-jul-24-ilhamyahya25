@@ -9,17 +9,16 @@
     </head>
         
     <body>
-        <!-- Main Title -->
-       <header class="main-title">
-            <h1>Calculator BMI</h1>
-            <p>Create By SatuSehat.co.id</p>
-       </header>
-
        <main>
             <!-- Left Content -->
             <section class="main-content">
                 <!-- Main Article -->
             <article>
+                <!-- Main Title -->
+        <header class="main-title">
+            <h1>Calculator BMI</h1>
+            <p>Create By SatuSehat.co.id</p>
+            </header>
                 <p class="isi-article">
                    Kalkulator BMI (Body Mass Index) digunakan untuk menghitung indeks massa 
                    tubuh seseorang. Ini adalah cara standar untuk menentukan apakah berat 
@@ -32,27 +31,27 @@
             <section>
                 <form>
                    <div>
-                    <label for="gender">Jenis Kelamin</label>
+                    <label for="gender">Jenis Kelamin</label><br>
                     <select id="gender">
                         <option value="male">Pria</option>
                         <option value="female">Wanita</option>
                     </select>
                    </div>
                    <div>
-                    <label for="input-berat-badan">Berat Badan (kg)</label>
-                    <input type="number" id="input-berat-badan">
+                    <label for="inputberatbadan">Berat Badan (kg)</label><br>
+                    <input type="number" id="inputberatbadan" name="inputberatbadan" reuired><br><br>
                    </div>
                    <div>
-                    <label for="input_usia">Usia (th)</label>
-                    <input type="number" id="input-usia">
+                    <label for="inputusia">Usia (th)</label><br>
+                    <input type="number" id="inputusia" name="inputusia" reuired><br><br>
                    </div>
                    <div>
-                    <label for="input_tinggi-badan">Tinggi Badan (cm)</label>
-                    <input type="number" id="input-tinggi-badan">
+                    <label for="inputtinggibadan">Tinggi Badan (cm)</label><br>
+                    <input type="number" id="inputtinggibadan" name="inputtinggibadan" reuired><br><br>
                    </div>
                    <div>
-                        <button class="button-submit">Submit BMI</button>
-                        <button class="button-riset">Reset</button>
+                    <button type="submit">Submit BMI</button>
+                    <button type="reset">Reset</button>
                    </div>
                 </form>
             </section>
@@ -77,38 +76,49 @@
                 <!-- Result Article -->
                 <article>
                     <header>
-                        <h1>Result</h1>
+                        <h1>Result BMI</h1>
                     </header>
 
                     <!-- Result Content -->
                     <section class="result-section">
-                        <p>Hasil Result Adalah:</p>
-
-                        <h2>24.7</h2>
-
-                        <p>Anda Memiliki Berat Badan Berlebih</p>
+                        <div>
+                            <h2>Result</h2>
+                            <p id="Result">Hasil Result Adalah :</p>
+                            <p id="bmiValue">Nilai BMI : 18.5</p>
+                            <p id="Message">Keterangan : Anda Memiliki Berat Badan Normal/p>
+                        </div>
                     </section>
-
+                    
                     <!-- General informatin -->
                     <article>
-                        <p1> 
+                        <p> 
                             Untuk konsultasi lebih lanjut dapat hubungi dokter kami :
-                            
+                        </p>    
                     </article>
                      <div>
-                        <p1 class="keterangan">Dokter  : Dr. Ilham Yahya Mulyana </p1>
-                        </p1>
+                        <p class="keterangan">Dokter  : Dr. Ilham Yahya Mulyana </p>
+                       
                      </div>
                      <div>
-                        <p2 class="keterangan">Email   : ilhamyahyamulyana25@gmail.com</p2>
+                        <p class="keterangan">Email   : ilhamyahyamulyana25@gmail.com</p>
                      </div>
                      <div>
-                        <p3 class="keterangan">No. HP  : 0895-3582-58247</p3>
+                        <p class="keterangan">No. HP  : 0895-3582-58247</p>
                      </div>
                  </article>
+                 <div class="container">
+                    <h3>Download Aplikasi</h3>
+                    <div class="app-buttons">
+                        <a href="https://play.google.com/store/games" target="_blank" class="app-button google-play">
+                            <img src="https://play.google.com/store/games" alt="Google Play">
+                        </a>
+                        <a href="https://play.google.com/store/games" target="_blank" class="app-button app-store">
+                            <img src="https://play.google.com/store/games" alt="App Store">
+                        </a>
+                    </div>
+                </div>
             </section>
        </main>
-
        <script src="script.js"></script>
     </body>
 </html>

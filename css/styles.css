@@ -2,6 +2,7 @@
 
 .main-title {
     text-align: center;
+    font-size: 20px;
 }
 
 main {
@@ -68,6 +69,38 @@ input[type=number] {
 
 .keterangan {
     text-decoration: underline;
-    text-align: justify;
-    text-size-adjust: inherit;
+    text-justify: newspaper;
+    margin-bottom: 20px;
+    font-size: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    text-align: center;
+}
+
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.app-button img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.app-button img:hover {
+    transform: scale(1.05);
 }
