@@ -5,10 +5,110 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
         
     <body>
-       
+        <!-- Main Title -->
+       <header class="main-title">
+            <h1>Calculator BMI</h1>
+            <p>Create By SatuSehat.co.id</p>
+       </header>
+
+       <main>
+            <!-- Left Content -->
+            <section class="main-content">
+                <!-- Main Article -->
+            <article>
+                <p class="isi-article">
+                   Kalkulator BMI (Body Mass Index) digunakan untuk menghitung indeks massa 
+                   tubuh seseorang. Ini adalah cara standar untuk menentukan apakah berat 
+                   badan seseorang berada dalamrentang yang sehat  berdasarkan tinggi badan,
+                   berat badan dan usia.
+                </p>
+            </article>
+
+            <!-- Form-->
+            <section>
+                <form>
+                   <div>
+                    <label for="gender">Jenis Kelamin</label>
+                    <select id="gender">
+                        <option value="male">Pria</option>
+                        <option value="female">Wanita</option>
+                    </select>
+                   </div>
+                   <div>
+                    <label for="input-berat-badan">Berat Badan (kg)</label>
+                    <input type="number" id="input-berat-badan">
+                   </div>
+                   <div>
+                    <label for="input_usia">Usia (th)</label>
+                    <input type="number" id="input-usia">
+                   </div>
+                   <div>
+                    <label for="input_tinggi-badan">Tinggi Badan (cm)</label>
+                    <input type="number" id="input-tinggi-badan">
+                   </div>
+                   <div>
+                        <button class="button-submit">Submit BMI</button>
+                        <button class="button-riset">Reset</button>
+                   </div>
+                </form>
+            </section>
+
+            <!-- Form Article -->
+            <setion>             
+                <header>
+                    <h2>Keunggulan Fitur</h2>
+                </header>
+                <article>
+                    <P class="isi-article">
+                        BMI dapat memberikan gambaran kasar tentang status berat 
+                        badan seseorang, tetapi tidak mempertimbangkan komposisi tubuh seperti lemak 
+                        tubuh dan otot, yang juga penting untuk kesehatan secara keseluruhan.
+                    </P>
+                </article>
+            </setion> 
+            </section>
+
+            <!-- Right Content -->
+            <section class="main-content">
+                <!-- Result Article -->
+                <article>
+                    <header>
+                        <h1>Result</h1>
+                    </header>
+
+                    <!-- Result Content -->
+                    <section class="result-section">
+                        <p>Hasil Result Adalah:</p>
+
+                        <h2>24.7</h2>
+
+                        <p>Anda Memiliki Berat Badan Berlebih</p>
+                    </section>
+
+                    <!-- General informatin -->
+                    <article>
+                        <p1> 
+                            Untuk konsultasi lebih lanjut dapat hubungi dokter kami :
+                            
+                    </article>
+                     <div>
+                        <p1 class="keterangan">Dokter  : Dr. Ilham Yahya Mulyana </p1>
+                        </p1>
+                     </div>
+                     <div>
+                        <p2 class="keterangan">Email   : ilhamyahyamulyana25@gmail.com</p2>
+                     </div>
+                     <div>
+                        <p3 class="keterangan">No. HP  : 0895-3582-58247</p3>
+                     </div>
+                 </article>
+            </section>
+       </main>
+
+       <script src="script.js"></script>
     </body>
-    
 </html>
