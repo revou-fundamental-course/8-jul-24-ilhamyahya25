@@ -8,7 +8,7 @@ function calculateSum() {
     document.getElementById('Result').textContent = '${sum}';
 
         let Message; 
-        if ( onclick button == bmi < 18.5) {
+        if (onclick == bmi < 18.5) {
             bmi = "Anda Memiliki Berat Badan Kurang";
         } else if (bmiValue >= 18.5 && bmi <= 24.9) {
             bmi = "Anda Memiliki Berat Badan Normal";
